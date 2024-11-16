@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivek Tanwar Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #f4f4f4;
+            display: flex;
+            flex-direction: row;
+            scroll-behavior: smooth;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #1a1a1a;
+            height: 100vh;
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+            animation: slideIn 1s ease-in-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        .sidebar h1 {
+            color: #f4f4f4;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            width: 100%;
+        }
+
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #f4f4f4;
+            font-size: 18px;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: #333;
+            transform: scale(1.05);
+        }
+
+        .main-content {
+            margin-left: 250px;
+            padding: 50px;
+            width: calc(100% - 250px);
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        section h3 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #ffcc00;
+            text-transform: uppercase;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .skills, .experience, .education, .certifications {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            padding: 20px;
+            border-radius: 10px;
+            width: calc(33% - 20px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        }
+
+        .progress-bar {
+            background-color: #333;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-top: 10px;
+            height: 10px;
+        }
+
+        .progress-bar span {
+            display: block;
+            height: 100%;
+            background-color: #ffcc00;
+            animation: growBar 1s ease-in-out;
+        }
+
+        @keyframes growBar {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1a1a1a;
+            margin-top: 50px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        footer a {
+            color: #f4f4f4;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #ffcc00;
+        }
+
+        @media screen and (max-width: 768px) {
+            .card {
+                width: calc(100% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h1>Vivek Tanwar</h1>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <section id="about">
+            <h3>About Me</h3>
+            <p>Hello! I'm Vivek Tanwar, a results-driven software developer with a passion for leveraging technology to create impactful and innovative solutions. With expertise in cloud computing, full-stack development, and data analytics, I specialize in building scalable, efficient, and user-centric software systems tailored to solve complex challenges and meet client needs. My journey in the tech world has been fueled by curiosity, a commitment to excellence, and a drive to continuously push boundaries, enabling me to deliver measurable results and elevate user experiences.</p>
+            <p>Throughout my career, I have successfully designed and implemented complex software solutions that align with business objectives, driving operational efficiency and creating value for stakeholders. I thrive in environments that require adaptability, innovation, and collaboration, embracing challenges as opportunities to grow and excel. My technical expertise spans a diverse range of tools and platforms, empowering me to take on end-to-end project responsibilities, from ideation and development to deployment and optimization.</p>
+            <p>Beyond my technical skills, I take pride in being a proactive learner and a team player. I stay ahead of industry trends by continuously exploring emerging technologies like AI, machine learning, and blockchain. I actively participate in tech communities, contributing to open-source projects and sharing knowledge to uplift others. My ability to mentor and inspire fellow developers has been instrumental in fostering a culture of innovation and mutual growth within my teams.</p>
+            <p>Outside of work, I am passionate about making a positive impact on the world through technology. I believe in the transformative power of digital solutions to create a better, more connected future. Whether it's crafting intuitive user experiences, building robust infrastructures, or analyzing data for meaningful insights, I am dedicated to making technology accessible and beneficial for all.</p>
+            <p><strong>Mission Statement:</strong> My mission is to harness the power of technology to craft innovative, reliable, and scalable solutions that empower businesses and individuals to thrive in a rapidly evolving digital world. I am committed to fostering collaboration, promoting innovation, and driving transformation through cutting-edge software development and data-driven insights. By prioritizing efficiency, creativity, and a user-first approach, I aim to create impactful solutions that leave a lasting impression.</p>
+        </section>
+        
+
+        <section id="skills">
+            <h3>Skills</h3>
+            <div class="skills">
+                <div class="card">
+                    <h4>Programming</h4>
+                    <p>Proficient in Python, SQL, JavaScript, and R. Experienced in Bash scripting.</p>
+                    <div class="progress-bar"><span style="width: 90%;"></span></div>
+                </div>
+                <div class="card">
+                    <h4>Data Analysis</h4>
+                    <p>Skilled in Tableau, Power BI, Pandas, and data modeling for visualization and analysis.</p>
+                    <div class="progress-bar"><span style="width: 85%;"></span></div>
+                </div>
+                <div class="card">
+                    <h4>Cloud Computing</h4>
+                    <p>Experienced with AWS and Azure services, including EC2, S3, and Kubernetes.</p>
+                    <div class="progress-bar"><span style="width: 80%;"></span></div>
+                </div>
+                <div class="card">
+                    <h4>DevOps</h4>
+                    <p>Proficient in Docker, Jenkins, CI/CD pipelines, and Git for version control.</p>
+                    <div class="progress-bar"><span style="width: 85%;"></span></div>
+                </div>
+                <div class="card">
+                    <h4>Database Management</h4>
+                    <p>Skilled in MySQL, PostgreSQL, and MongoDB for database design and optimization.</p>
+                    <div class="progress-bar"><span style="width: 85%;"></span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h3>Education</h3>
+            <div class="education">
+                <div class="card">
+                    <h4>Associate Degree in Computer Science</h4>
+                    <p>Lethbridge College, Canada (Aug 2023 - May 2025)</p>
+                    <p>Key Subjects: Advanced Programming, Cloud Computing, Big Data Analytics, and Software Development.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h3>Experience</h3>
+            <div class="experience">
+                <div class="card">
+                    <h4>Full Stack Developer</h4>
+                    <p>TECHNOAIDE SOLUTIONS PVT. LTD (Dec 2021 - Aug 2023)</p>
+                    <ul>
+                        <li>Developed scalable web applications using AWS and Azure.</li>
+                        <li>Implemented containerization with Docker and Kubernetes.</li>
+                        <li>Enhanced user experience through seamless API integrations.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h4>Data Analyst</h4>
+                    <p>TEG Analytics (Jun 2020 - Sep 2021)</p>
+                    <ul>
+                        <li>Analyzed SQL-based data to drive actionable insights.</li>
+                        <li>Built real-time Tableau dashboards, improving decision-making by 40%.</li>
+                        <li>Streamlined data workflows by automating pipelines in Python.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications">
+            <h3>Certifications</h3>
+            <div class="certifications">
+                <div class="card">
+                    <h4>Google Data Analytics</h4>
+                    <p>Google - May 2022</p>
+                </div>
+                <div class="card">
+                    <h4>AWS Certified Solutions Architect</h4>
+                    <p>Amazon Web Services - Nov 2024</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h3>Contact</h3>
+            <p>If you'd like to get in touch, feel free to reach out via email or connect with me on LinkedIn or GitHub!</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:vivektanwar719@gmail.com" style="color: #ffcc00;">vivektanwar719@gmail.com</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/tanwar-vivek/" target="_blank" style="color: #ffcc00;">linkedin.com/in/tanwar-vivek</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/Vivekt719" target="_blank" style="color: #ffcc00;">https://github.com/Vivekt719</a></li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Vivek Tanwar. All Rights Reserved.</p>
+            <a href="https://www.linkedin.com/in/tanwar-vivek/" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/Vivekt719" target="_blank">GitHub</a> |
+            <a href="mailto:vivektanwar719@gmail.com">Email</a>
+        </footer>
+    </div>
+</body>
+</html>
